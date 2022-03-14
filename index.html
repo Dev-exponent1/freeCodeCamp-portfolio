@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-title">
+            Dev-Exponent
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#welcome-section" class="active">About</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+
+
+    <section id="welcome-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-11 col-sm-12 col-10">
+                    <div class="text-center"> 
+                        <h1> Hey👋</h1>
+                   <p>I am <strong>Okunlola Muhammad Toyeeb</strong> also known as <strong><em>exponent</em></strong>. A  400L student of university of Ilorin. 
+                    Faculty of Communication and Information Sciences(CIS). Department of Information and Communication Science. I am Junior Front-end web developer. 
+                    I am passionate about learning and making researches. I only want to unlearn, learn, re-learn and develop my tech skils to help humanity.</p>
+                </div>
+                <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10 col-sm-11 col-12"> 
+                    <img src="Resources/IMG_0073.jpeg" class="image-fluid mine" alt="">
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="text-white">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-md-7 col-sm-12 col-10 text-center">
+                <h1 class="py-5 pro-tit">My Projects</h1> 
+                <div class="row gy-4">
+                <div class="col-lg-4">
+                    <a href="">
+                    <img src="resources/calc 2.JPG" class="image-fluid" alt="">
+                    <h4 class="project-tile">Arithmetic Calculator</h4>
+                </a>
+                </div> 
+               
+                <div class="col-lg-4">
+                    <a href="">
+                    <img src="Resources/Subway.JPG"class="image-fluid"  alt="">
+                    <h4 class="profile-tile">Subway Counter</h4>
+                </a>
+                </div> 
+
+                <div class="col-lg-4">
+                    <a href="">
+                    <img src="Resources/Subway.JPG" class="image-fluid" alt="">
+                    <h4 class="profile-tile">Sleepstiq Landing Page</h4>
+                </a>
+                 </div>
+                 <div class="pb-5">
+                 <button class="btn btn-danger"><a href="https://github.com/Dev-exponent1" target="_blank" id="profile-link">View More</a></button>
+                 </div> 
+            </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="bg-dark text-white pt-3">
+        <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-lg-10 col-nd-11 col-sm-12 col-10 text-center">
+                  <h1><i>Let's Connect and Work together...</i></h1>
+                  <h5>Here👇</h5>
+                  <div class="row justify-content-center">
+                  <div class="col-lg-10 col-md-7 col-sm-8 col-5 social-links g-3">
+                     
+                    <a href=><i class="fab fa-facebook f"></i></a>
+                    <a href="https://twitter.com/home?lang=en"><i class="fab fa-twitter"></i></a>
+                    <a href="https://twitter.com/home?lang=en"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Dev-exponent1"><i id="profile-link" class="fab fa-github"></i></a>
+                </div>
+                  </div>
+                  
+               </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    $(document).ready(function(){
+        $('#icon').click(function(){
+            $('.nav-links').toggleClass('show'); 
+        })
+
+    });
+</script>
+</html>

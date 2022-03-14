@@ -1,0 +1,189 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+nav{
+    background-color: #34495e;
+    width: 100%;
+    height: 80px;
+    display: flex;
+   justify-content: space-between;
+   position: fixed;
+   z-index: 999;
+   top: 0;
+}
+
+#welcome-section{
+    height: 100vh;
+}
+
+.nav-title{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    margin-left: 40px;
+    line-height: 80px;
+}
+
+nav .nav-links{
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+nav .nav-links li{
+    list-style: none;
+    line-height: 80px;
+   
+}
+
+button a{
+    color: white;
+}
+
+button a:hover{
+    color: white;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 3px;
+    border: 1px solid white;
+}
+ul li a:hover{
+    background-color: black;
+    transition: .5s;
+    font-weight: bold;
+    color: white;
+}
+
+a.active{
+    background-color: black;
+}
+
+nav #icon{
+    color: white;
+    line-height: 80px;
+    font-size: 25px;
+    margin-right: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.image-fluid{
+    width: 100%;
+}
+
+.mine{
+    clip-path: circle();
+    position: relative;
+    top: -10%;
+}
+
+.sleepstiq{
+    height: 65%;
+}
+
+
+#welcome-section{
+    margin-top: 100px;
+}
+div a {
+    text-decoration: none;
+}
+
+
+.profile-tile{
+    background-color: #17191b;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#projects{
+    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.748), rgba(128, 128, 128, 0.741)),url('../Resources/1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+.pro-tit{
+    color: gold;
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: rgb(255, 225, 255, 0.2);
+    margin: 0 10px 10px 10px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+}
+
+
+
+@media (max-width:1100px) {
+    nav .nav-links{
+        width: 57%;
+    }    
+}
+
+@media (max-width:768px){
+
+    .nav-title{
+        margin-left:30px;
+        font-size: 23px;
+    }
+
+    nav .nav-links{
+        position: fixed;
+        display: block;
+        top: 79px;
+        width: 40%;
+        height: 100vh;
+        background-color: #17191b;
+        left: -100%;
+        transition: all .8s ease-in-out;
+    }
+
+    nav #icon{
+        display: block;
+    }
+
+    nav .nav-links.show{
+        left: 0;
+    }
+
+    ul li a{
+        border: 1px solid #809dbadb;
+    }
+    ul li a:hover{
+        background-color: gray;
+    }
+
+    
+a.active{
+    background-color: gray
+    } ul li a{
+        font-size: 18px;
+    }
+
+}
